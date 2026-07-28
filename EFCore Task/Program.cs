@@ -26,6 +26,20 @@ public class Product
     public Category Category { get; set; }
 }
 
+public class Order
+{
+    public int Id { get; set; }
+    public DateTime OrderDate { get; set; }
+
+    public int UserId { get; set; }
+    public User User { get; set; }
+
+    public Review Review { get; set; }
+
+    public ICollection<OrderProduct> OrderProducts { get; set; } = new List<OrderProduct>();
+}
+
+
 class Program
 {
     static void Main(string[] args)
