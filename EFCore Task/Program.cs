@@ -50,6 +50,16 @@ public class OrderProduct
     public int Quantity { get; set; }
 }
 
+public class Review
+{
+    public int Id { get; set; }
+    public int Rating { get; set; }
+    public string Comment { get; set; }
+
+    public int OrderId { get; set; }
+    public Order Order { get; set; }
+}
+
 class Program
 {
     static void Main(string[] args)
