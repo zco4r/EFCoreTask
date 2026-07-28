@@ -13,18 +13,7 @@
     <configurations />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3624669b-7f56-4a5e-aa8a-95ab5e6b2413" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/EFCore Task/AppDbContex.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.EFCore Task/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EFCore Task/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EFCore Task/Category.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EFCore Task/Category.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EFCore Task/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EFCore Task/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EFCore Task/obj/Debug/net10.0/EFCore Task.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EFCore Task/obj/Debug/net10.0/EFCore Task.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EFCore Task/obj/Debug/net10.0/EFCore Task.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EFCore Task/obj/Debug/net10.0/EFCore Task.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EFCore Task/obj/EFCore Task.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/EFCore Task/obj/EFCore Task.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EFCore Task/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/EFCore Task/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EFCore Task/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EFCore Task/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EFCore Task/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/EFCore Task/obj/rider.project.restore.info" afterDir="false" />
-    </list>
+    <list default="true" id="3624669b-7f56-4a5e-aa8a-95ab5e6b2413" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -114,7 +103,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1785154155357</updated>
-      <workItem from="1785154156571" duration="10160000" />
+      <workItem from="1785154156571" duration="10678000" />
     </task>
     <task id="LOCAL-00001" summary="IDK">
       <option name="closed" value="true" />
@@ -236,7 +225,63 @@
       <option name="project" value="LOCAL" />
       <updated>1785234756712</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="class AppDbContext : DbContext">
+      <option name="closed" value="true" />
+      <created>1785241719669</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1785241719669</updated>
+    </task>
+    <task id="LOCAL-00017" summary="+category">
+      <option name="closed" value="true" />
+      <created>1785241758592</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1785241758592</updated>
+    </task>
+    <task id="LOCAL-00018" summary="EFCore Task.AssemblyInfo.cs">
+      <option name="closed" value="true" />
+      <created>1785241798966</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1785241798966</updated>
+    </task>
+    <task id="LOCAL-00019" summary="-">
+      <option name="closed" value="true" />
+      <created>1785241811892</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1785241811892</updated>
+    </task>
+    <task id="LOCAL-00020" summary="-">
+      <option name="closed" value="true" />
+      <created>1785241820404</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1785241820404</updated>
+    </task>
+    <task id="LOCAL-00021" summary="--">
+      <option name="closed" value="true" />
+      <created>1785241835664</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1785241835664</updated>
+    </task>
+    <task id="LOCAL-00022" summary="=">
+      <option name="closed" value="true" />
+      <created>1785241844308</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1785241844308</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,7 +292,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="IDK" />
-    <MESSAGE value="=" />
     <MESSAGE value="class User" />
     <MESSAGE value="class Category" />
     <MESSAGE value="class Product" />
@@ -261,7 +305,13 @@
     <MESSAGE value="Program.cs" />
     <MESSAGE value="Review.cs" />
     <MESSAGE value="User.cs" />
-    <option name="LAST_COMMIT_MESSAGE" value="User.cs" />
+    <MESSAGE value="class AppDbContext : DbContext" />
+    <MESSAGE value="+category" />
+    <MESSAGE value="EFCore Task.AssemblyInfo.cs" />
+    <MESSAGE value="-" />
+    <MESSAGE value="--" />
+    <MESSAGE value="=" />
+    <option name="LAST_COMMIT_MESSAGE" value="=" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
