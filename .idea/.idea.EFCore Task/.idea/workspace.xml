@@ -13,7 +13,16 @@
     <configurations />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3624669b-7f56-4a5e-aa8a-95ab5e6b2413" name="Changes" comment="" />
+    <list default="true" id="3624669b-7f56-4a5e-aa8a-95ab5e6b2413" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.EFCore Task/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EFCore Task/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EFCore Task/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EFCore Task/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EFCore Task/obj/Debug/net10.0/EFCore Task.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EFCore Task/obj/Debug/net10.0/EFCore Task.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EFCore Task/obj/Debug/net10.0/EFCore Task.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EFCore Task/obj/Debug/net10.0/EFCore Task.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EFCore Task/obj/EFCore Task.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/EFCore Task/obj/EFCore Task.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EFCore Task/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/EFCore Task/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EFCore Task/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EFCore Task/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EFCore Task/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/EFCore Task/obj/rider.project.model.nuget.info" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -103,7 +112,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1785154155357</updated>
-      <workItem from="1785154156571" duration="10678000" />
+      <workItem from="1785154156571" duration="14395000" />
     </task>
     <task id="LOCAL-00001" summary="IDK">
       <option name="closed" value="true" />
@@ -281,7 +290,15 @@
       <option name="project" value="LOCAL" />
       <updated>1785241844308</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="§">
+      <option name="closed" value="true" />
+      <created>1785241952081</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1785241952081</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,7 +328,8 @@
     <MESSAGE value="-" />
     <MESSAGE value="--" />
     <MESSAGE value="=" />
-    <option name="LAST_COMMIT_MESSAGE" value="=" />
+    <MESSAGE value="§" />
+    <option name="LAST_COMMIT_MESSAGE" value="§" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
