@@ -1,0 +1,6 @@
+/Users/ammaralazki/RiderProjects/EFCore Task/EFCore Task/obj/Debug/net10.0/EFCore Task.csproj.AssemblyReference.cache
+/Users/ammaralazki/RiderProjects/EFCore Task/EFCore Task/obj/Debug/net10.0/EFCore Task.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ammaralazki/RiderProjects/EFCore Task/EFCore Task/obj/Debug/net10.0/EFCore Task.AssemblyInfoInputs.cache
+/Users/ammaralazki/RiderProjects/EFCore Task/EFCore Task/obj/Debug/net10.0/EFCore Task.AssemblyInfo.cs
+/Users/ammaralazki/RiderProjects/EFCore Task/EFCore Task/obj/Debug/net10.0/EFCore Task.csproj.CoreCompileInputs.cache
+/Users/ammaralazki/RiderProjects/EFCore Task/EFCore Task/obj/Debug/net10.0/EFCore Task.sourcelink.json
