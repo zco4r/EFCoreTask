@@ -1,9 +1,10 @@
-﻿namespace EFCore_Task;
+﻿using EFCore_Task;
 
-class Program
+using (var context = new AppDbContext())
 {
-    static void Main(string[] args)
-    {
-        Console.WriteLine("Hello, World!");
-    }
+    context.Database.EnsureCreated();
+    
 }
+
+Console.WriteLine("تم إنشاء قاعدة البيانات بنجاح!");
+
