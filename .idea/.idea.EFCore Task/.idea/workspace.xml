@@ -13,9 +13,7 @@
     <configurations />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3624669b-7f56-4a5e-aa8a-95ab5e6b2413" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/EFCore Task/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EFCore Task/Program.cs" afterDir="false" />
-    </list>
+    <list default="true" id="3624669b-7f56-4a5e-aa8a-95ab5e6b2413" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -105,7 +103,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1785154155357</updated>
-      <workItem from="1785154156571" duration="14742000" />
+      <workItem from="1785154156571" duration="15375000" />
     </task>
     <task id="LOCAL-00001" summary="IDK">
       <option name="closed" value="true" />
@@ -403,7 +401,31 @@
       <option name="project" value="LOCAL" />
       <updated>1785330368316</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Task1">
+      <option name="closed" value="true" />
+      <created>1785330562952</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1785330562952</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Task2">
+      <option name="closed" value="true" />
+      <created>1785330812534</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1785330812534</updated>
+    </task>
+    <task id="LOCAL-00040" summary="±">
+      <option name="closed" value="true" />
+      <created>1785330822010</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1785330822010</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -434,7 +456,10 @@
     <MESSAGE value="--" />
     <MESSAGE value="§" />
     <MESSAGE value="=" />
-    <option name="LAST_COMMIT_MESSAGE" value="=" />
+    <MESSAGE value="Task1" />
+    <MESSAGE value="Task2" />
+    <MESSAGE value="±" />
+    <option name="LAST_COMMIT_MESSAGE" value="±" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
