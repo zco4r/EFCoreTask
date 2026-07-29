@@ -1,10 +1,23 @@
-﻿using EFCore_Task;
+﻿using EFCore_Task; 
 
-using (var context = new AppDbContext())
+using var context = new AppDbContext();
+context.Database.EnsureCreated();
+
+Console.WriteLine("--- Register New User ---");
+
+Console.Write("Enter Username: ");
+string username = Console.ReadLine();
+
+Console.Write("Enter Email: ");
+string email = Console.ReadLine();
+
+var newUser = new User
 {
-    context.Database.EnsureCreated();
-    
-}
+    Name = username,
+     Email = email
+};
 
-Console.WriteLine("تم إنشاء قاعدة البيانات بنجاح!");
+context.Users.Add(newUser);
+context.SaveChanges();
 
+Console.WriteLine("User registered and saved to database successfully!");
