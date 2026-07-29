@@ -50,3 +50,40 @@ context.Categories.Add(newCategory);
 context.SaveChanges();
 
 Console.WriteLine("Category added and saved to database successfully!");
+
+Console.WriteLine("=== Add New Product ===");
+
+var categories = context.Categories.ToList();
+if (categories.Count == 0)
+{
+    Console.WriteLine("No categories available. Please add a category first.");
+}
+else
+{
+    Console.WriteLine("Available Categories:");
+    foreach (var cat in categories)
+    {
+        Console.WriteLine($"ID: {cat.Id} | Name: {cat.Name}");
+    }
+
+    Console.Write("Enter Product Name: ");
+    string productName = Console.ReadLine();
+
+    Console.Write("Enter Product Price: ");
+    decimal productPrice = decimal.Parse(Console.ReadLine());
+
+    Console.Write("Enter Category ID for this product: ");
+    int selectedCategoryId = int.Parse(Console.ReadLine());
+
+    var newProduct = new Product
+    {
+        Name = productName,
+        Price = productPrice,
+        CategoryId = selectedCategoryId
+    };
+
+    context.Products.Add(newProduct);
+    context.SaveChanges();
+
+    Console.WriteLine("Product added and linked to category successfully!");
+}
