@@ -1,9 +1,10 @@
-﻿using EFCore_Task; 
-
+﻿using EFCore_Task;
 using Microsoft.EntityFrameworkCore;
 
 using var context = new AppDbContext();
 context.Database.EnsureCreated();
+
+int loggedInUserId = 0;
 
 Console.WriteLine("=== Register New User ===");
 Console.Write("Enter Username: ");
@@ -31,6 +32,7 @@ var foundUser = context.Users.FirstOrDefault(u => u.Email == loginEmail);
 
 if (foundUser != null)
 {
+    loggedInUserId = foundUser.Id; 
     Console.WriteLine($"Login Successful! Welcome, {foundUser.Username}\n");
 }
 else
@@ -91,7 +93,7 @@ var productsList = context.Products.Include(p => p.Category).ToList();
 
 if (productsList.Count == 0)
 {
-    Console.WriteLine("No products found.");
+    Console.WriteLine("No products found.\n");
 }
 else
 {
@@ -99,7 +101,78 @@ else
     foreach (var p in productsList)
     {
         string catName = p.Category != null ? p.Category.Name : "No Category";
-        Console.WriteLine($"Name: {p.Name} | Price: ${p.Price} | Category: {catName}");
+        Console.WriteLine($"ID: {p.Id} | Name: {p.Name} | Price: ${p.Price} | Category: {catName}");
     }
-    Console.WriteLine("----------------------------------------");
+    Console.WriteLine("----------------------------------------\n");
+}
+
+
+Console.WriteLine("=== Place an Order ===");
+
+if (loggedInUserId == 0)
+{
+    Console.WriteLine("Error: You must be logged in to place an order.");
+}
+else
+{
+    var allProducts = context.Products.ToList();
+    if (allProducts.Count == 0)
+    {
+        Console.WriteLine("No products available to order.");
+    }
+    else
+    {
+        var newOrder = new Order
+        {
+            UserId = loggedInUserId,
+            OrderDate = DateTime.Now,
+            OrderProducts = new List<OrderProduct>()
+        };
+
+        bool addingProducts = true;
+        while (addingProducts)
+        {
+            Console.Write("Enter Product ID to add to order (or type 0 to finish): ");
+            int prodId = int.Parse(Console.ReadLine());
+
+            if (prodId == 0)
+            {
+                break;
+            }
+
+            var productExists = allProducts.Any(p => p.Id == prodId);
+            if (!productExists)
+            {
+                Console.WriteLine("Invalid Product ID. Try again.");
+                continue;
+            }
+
+            Console.Write("Enter Quantity: ");
+            int qty = int.Parse(Console.ReadLine());
+
+            newOrder.OrderProducts.Add(new OrderProduct
+            {
+                ProductId = prodId,
+                Quantity = qty
+            });
+
+            Console.Write("Add another product? (y/n): ");
+            string choice = Console.ReadLine();
+            if (choice?.ToLower() != "y")
+            {
+                addingProducts = false;
+            }
+        }
+
+        if (newOrder.OrderProducts.Count > 0)
+        {
+            context.Orders.Add(newOrder);
+            context.SaveChanges();
+            Console.WriteLine("Order placed and saved successfully!");
+        }
+        else
+        {
+            Console.WriteLine("Order cancelled because no products were selected.");
+        }
+    }
 }
