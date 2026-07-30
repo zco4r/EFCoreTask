@@ -15,7 +15,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3624669b-7f56-4a5e-aa8a-95ab5e6b2413" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EFCore Task/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EFCore Task/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EFCore Task/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EFCore Task/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,47 +105,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1785154155357</updated>
-      <workItem from="1785154156571" duration="21316000" />
-    </task>
-    <task id="LOCAL-00001" summary="IDK">
-      <option name="closed" value="true" />
-      <created>1785154377910</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1785154377910</updated>
-    </task>
-    <task id="LOCAL-00002" summary="=">
-      <option name="closed" value="true" />
-      <created>1785154386699</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1785154386699</updated>
-    </task>
-    <task id="LOCAL-00003" summary="class User">
-      <option name="closed" value="true" />
-      <created>1785154658493</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1785154658493</updated>
-    </task>
-    <task id="LOCAL-00004" summary="class Category">
-      <option name="closed" value="true" />
-      <created>1785233742055</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1785233742055</updated>
-    </task>
-    <task id="LOCAL-00005" summary="class Product">
-      <option name="closed" value="true" />
-      <created>1785233894981</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1785233894981</updated>
+      <workItem from="1785154156571" duration="21927000" />
     </task>
     <task id="LOCAL-00006" summary="class order">
       <option name="closed" value="true" />
@@ -500,7 +459,47 @@
       <option name="project" value="LOCAL" />
       <updated>1785390038831</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Task9-Add a Review for an Order">
+      <option name="closed" value="true" />
+      <created>1785391673767</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1785391673770</updated>
+    </task>
+    <task id="LOCAL-00051" summary="-">
+      <option name="closed" value="true" />
+      <created>1785391680240</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1785391680240</updated>
+    </task>
+    <task id="LOCAL-00052" summary="If">
+      <option name="closed" value="true" />
+      <created>1785391820800</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1785391820800</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Task10-View All Reviews for a Product">
+      <option name="closed" value="true" />
+      <created>1785391884174</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1785391884175</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Task11">
+      <option name="closed" value="true" />
+      <created>1785391946085</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1785391946085</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -510,10 +509,6 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="class OrderProduct" />
-    <MESSAGE value="class Review" />
-    <MESSAGE value="category" />
-    <MESSAGE value="Order.cs" />
     <MESSAGE value="OrderProduct.cs" />
     <MESSAGE value="Product.cs" />
     <MESSAGE value="Program.cs" />
@@ -533,9 +528,13 @@
     <MESSAGE value="=" />
     <MESSAGE value="Task6" />
     <MESSAGE value="Task7" />
-    <MESSAGE value="-" />
     <MESSAGE value="Task8" />
-    <option name="LAST_COMMIT_MESSAGE" value="Task8" />
+    <MESSAGE value="Task9-Add a Review for an Order" />
+    <MESSAGE value="-" />
+    <MESSAGE value="If" />
+    <MESSAGE value="Task10-View All Reviews for a Product" />
+    <MESSAGE value="Task11" />
+    <option name="LAST_COMMIT_MESSAGE" value="Task11" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
