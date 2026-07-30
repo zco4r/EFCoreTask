@@ -1,9 +1,11 @@
 ﻿using EFCore_Task; 
 
+using Microsoft.EntityFrameworkCore;
+
 using var context = new AppDbContext();
 context.Database.EnsureCreated();
 
-Console.WriteLine("=== Register ===");
+Console.WriteLine("=== Register New User ===");
 Console.Write("Enter Username: ");
 string regUsername = Console.ReadLine();
 
@@ -48,17 +50,13 @@ var newCategory = new Category
 
 context.Categories.Add(newCategory);
 context.SaveChanges();
+Console.WriteLine("Category added successfully!\n");
 
-Console.WriteLine("Category added and saved to database successfully!");
 
 Console.WriteLine("=== Add New Product ===");
-
 var categories = context.Categories.ToList();
-if (categories.Count == 0)
-{
-    Console.WriteLine("No categories available. Please add a category first.");
-}
-else
+
+if (categories.Count > 0)
 {
     Console.WriteLine("Available Categories:");
     foreach (var cat in categories)
@@ -84,6 +82,24 @@ else
 
     context.Products.Add(newProduct);
     context.SaveChanges();
+    Console.WriteLine("Product added successfully!\n");
+}
 
-    Console.WriteLine("Product added and linked to category successfully!");
+
+Console.WriteLine("=== View All Products ===");
+var productsList = context.Products.Include(p => p.Category).ToList();
+
+if (productsList.Count == 0)
+{
+    Console.WriteLine("No products found.");
+}
+else
+{
+    Console.WriteLine("----------------------------------------");
+    foreach (var p in productsList)
+    {
+        string catName = p.Category != null ? p.Category.Name : "No Category";
+        Console.WriteLine($"Name: {p.Name} | Price: ${p.Price} | Category: {catName}");
+    }
+    Console.WriteLine("----------------------------------------");
 }
