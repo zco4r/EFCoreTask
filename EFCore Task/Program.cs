@@ -355,3 +355,14 @@ else
         Console.WriteLine("Invalid Product ID format.");
     }
 }
+
+Console.WriteLine("=== Logout ===");
+if (loggedInUserId == 0)
+{
+    Console.WriteLine("No user is currently logged in.");
+}
+else
+{
+    loggedInUserId = 0;
+    Console.WriteLine("Logged out successfully! Current session is cleared.");
+}
