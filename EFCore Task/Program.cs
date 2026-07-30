@@ -55,7 +55,6 @@ context.SaveChanges();
 Console.WriteLine("Category added successfully!\n");
 
 
-// --- 4. Add New Product ---
 Console.WriteLine("=== Add New Product ===");
 var categories = context.Categories.ToList();
 
@@ -159,7 +158,7 @@ else
 Console.WriteLine("=== View My Orders ===");
 if (loggedInUserId == 0)
 {
-    Console.WriteLine("Error: You must be logged in to view your orders.");
+    Console.WriteLine("Error: You must be logged in to view your orders.\n");
 }
 else
 {
@@ -171,7 +170,7 @@ else
 
     if (myOrders.Count == 0)
     {
-        Console.WriteLine("You have no orders yet.");
+        Console.WriteLine("You have no orders yet.\n");
     }
     else
     {
@@ -188,6 +187,60 @@ else
                 Console.WriteLine($"  - {pName} | Price: ${pPrice} | Quantity: {op.Quantity}");
             }
         }
+        Console.WriteLine("----------------------------------------\n");
+    }
+}
+
+
+Console.WriteLine("=== View Order Details ===");
+Console.Write("Enter Order ID to view details: ");
+if (int.TryParse(Console.ReadLine(), out int targetOrderId))
+{
+    var orderDetails = context.Orders
+        .Include(o => o.OrderProducts)
+        .ThenInclude(op => op.Product)
+        .Include(o => o.Review) 
+        .FirstOrDefault(o => o.Id == targetOrderId);
+
+    if (orderDetails == null)
+    {
+        Console.WriteLine("Error: Order not found.");
+    }
+    else
+    {
+        Console.WriteLine("----------------------------------------");
+        Console.WriteLine($"Order ID: {orderDetails.Id}");
+        Console.WriteLine($"Order Date: {orderDetails.OrderDate}");
+        Console.WriteLine("Products:");
+
+        decimal orderTotal = 0;
+
+        foreach (var op in orderDetails.OrderProducts)
+        {
+            string productName = op.Product != null ? op.Product.Name : "Unknown";
+            decimal productPrice = op.Product != null ? op.Product.Price : 0;
+            decimal subTotal = productPrice * op.Quantity;
+            orderTotal += subTotal;
+
+            Console.WriteLine($"  * {productName} | Price: ${productPrice} | Qty: {op.Quantity} | Subtotal: ${subTotal}");
+        }
+
+        Console.WriteLine($"----------------------------------------");
+        Console.WriteLine($"Order Total: ${orderTotal}");
+
+        if (orderDetails.Review != null)
+        {
+            Console.WriteLine($"Review Rating: {orderDetails.Review.Rating} / 5");
+            Console.WriteLine($"Review Comment: {orderDetails.Review.Comment}");
+        }
+        else
+        {
+            Console.WriteLine("Review: No review submitted for this order yet.");
+        }
         Console.WriteLine("----------------------------------------");
     }
+}
+else
+{
+    Console.WriteLine("Invalid Order ID format.");
 }
