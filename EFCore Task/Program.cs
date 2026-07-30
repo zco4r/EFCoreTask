@@ -297,3 +297,31 @@ else
         Console.WriteLine("Invalid Order ID format.");
     }
 }
+
+// --- 10. View All Reviews for a Product ---
+Console.WriteLine("=== View All Reviews for a Product ===");
+var allProductsForReview = context.Products.ToList();
+
+if (allProductsForReview.Count == 0)
+{
+    Console.WriteLine("No products available.");
+}
+else
+{
+    Console.WriteLine("Available Products:");
+    foreach (var prod in allProductsForReview)
+    {
+        Console.WriteLine($"ID: {prod.Id} | Name: {prod.Name}");
+    }
+
+    Console.Write("Enter Product ID to view its reviews: ");
+    if (int.TryParse(Console.ReadLine(), out int targetProductId))
+    {
+        var productExists = allProductsForReview.Any(p => p.Id == targetProductId);
+        if (!productExists)
+        {
+            Console.WriteLine("Error: Product not found.");
+        }
+    }    
+
+}
