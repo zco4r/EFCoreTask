@@ -244,3 +244,56 @@ else
 {
     Console.WriteLine("Invalid Order ID format.");
 }
+
+Console.WriteLine("=== Add a Review for an Order ===");
+if (loggedInUserId == 0)
+{
+    Console.WriteLine("Error: You must be logged in to add a review.");
+}
+else
+{
+    Console.Write("Enter Order ID to review: ");
+    if (int.TryParse(Console.ReadLine(), out int reviewOrderId))
+    {
+        var targetOrder = context.Orders
+            .Include(o => o.Review)
+            .FirstOrDefault(o => o.Id == reviewOrderId && o.UserId == loggedInUserId);
+
+        if (targetOrder == null)
+        {
+            Console.WriteLine("Error: Order not found or does not belong to you.");
+        }
+        else if (targetOrder.Review != null)
+        {
+            Console.WriteLine("Error: This order already has a review (1:1 constraint).");
+        }
+        else
+        {
+            Console.Write("Enter Rating (1 to 5): ");
+            if (int.TryParse(Console.ReadLine(), out int rating) && rating >= 1 && rating <= 5)
+            {
+                Console.Write("Enter Comment: ");
+                string comment = Console.ReadLine();
+
+                var newReview = new Review
+                {
+                    OrderId = reviewOrderId,
+                    Rating = rating,
+                    Comment = comment
+                };
+
+                context.Reviews.Add(newReview);
+                context.SaveChanges();
+                Console.WriteLine("Review added successfully!");
+            }
+            else
+            {
+                Console.WriteLine("Invalid rating. Must be a number between 1 and 5.");
+            }
+        }
+    }
+    else
+    {
+        Console.WriteLine("Invalid Order ID format.");
+    }
+}
