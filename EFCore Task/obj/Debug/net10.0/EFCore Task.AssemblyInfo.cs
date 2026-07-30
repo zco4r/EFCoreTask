@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EFCore Task")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2ddb6e5e26d1ddd06a18ccb7081656a5084f6df5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+734e8447b22af1b00e581508c19c368d0ebf2761")]
 [assembly: System.Reflection.AssemblyProductAttribute("EFCore Task")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EFCore Task")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
