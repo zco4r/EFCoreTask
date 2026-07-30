@@ -298,7 +298,6 @@ else
     }
 }
 
-// --- 10. View All Reviews for a Product ---
 Console.WriteLine("=== View All Reviews for a Product ===");
 var allProductsForReview = context.Products.ToList();
 
@@ -322,6 +321,37 @@ else
         {
             Console.WriteLine("Error: Product not found.");
         }
-    }    
+        else
+        {
+            var ordersWithProduct = context.Orders
+                .Where(o => o.OrderProducts.Any(op => op.ProductId == targetProductId))
+                .Include(o => o.Review)
+                .Include(o => o.User)
+                .ToList();
 
+            var reviewsList = ordersWithProduct
+                .Where(o => o.Review != null)
+                .ToList();
+
+            if (reviewsList.Count == 0)
+            {
+                Console.WriteLine("No reviews found for this product.");
+            }
+            else
+            {
+                Console.WriteLine($"----------------------------------------");
+                Console.WriteLine($"Reviews for Product ID {targetProductId}:");
+                foreach (var order in reviewsList)
+                {
+                    string userName = order.User != null ? order.User.Username : "Unknown User";
+                    Console.WriteLine($"  - Order ID: {order.Id} | User: {userName} | Rating: {order.Review.Rating}/5 | Comment: {order.Review.Comment}");
+                }
+                Console.WriteLine($"----------------------------------------");
+            }
+        }
+    }
+    else
+    {
+        Console.WriteLine("Invalid Product ID format.");
+    }
 }
