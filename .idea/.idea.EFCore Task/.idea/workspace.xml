@@ -13,9 +13,7 @@
     <configurations />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3624669b-7f56-4a5e-aa8a-95ab5e6b2413" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.EFCore Task/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EFCore Task/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="3624669b-7f56-4a5e-aa8a-95ab5e6b2413" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -105,7 +103,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1785154155357</updated>
-      <workItem from="1785154156571" duration="18281000" />
+      <workItem from="1785154156571" duration="18904000" />
     </task>
     <task id="LOCAL-00001" summary="IDK">
       <option name="closed" value="true" />
@@ -443,7 +441,23 @@
       <option name="project" value="LOCAL" />
       <updated>1785331744114</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Task5">
+      <option name="closed" value="true" />
+      <created>1785387907252</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1785387907252</updated>
+    </task>
+    <task id="LOCAL-00044" summary="=">
+      <option name="closed" value="true" />
+      <created>1785387913275</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1785387913275</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -453,7 +467,6 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="class User" />
     <MESSAGE value="class Category" />
     <MESSAGE value="class Product" />
     <MESSAGE value="class order" />
@@ -472,13 +485,14 @@
     <MESSAGE value="-" />
     <MESSAGE value="--" />
     <MESSAGE value="§" />
-    <MESSAGE value="=" />
     <MESSAGE value="Task1" />
     <MESSAGE value="Task2" />
     <MESSAGE value="±" />
     <MESSAGE value="Task3" />
     <MESSAGE value="Task4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Task4" />
+    <MESSAGE value="Task5" />
+    <MESSAGE value="=" />
+    <option name="LAST_COMMIT_MESSAGE" value="=" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
