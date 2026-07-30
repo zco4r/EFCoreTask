@@ -13,9 +13,7 @@
     <configurations />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3624669b-7f56-4a5e-aa8a-95ab5e6b2413" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.EFCore Task/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EFCore Task/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="3624669b-7f56-4a5e-aa8a-95ab5e6b2413" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -105,15 +103,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1785154155357</updated>
-      <workItem from="1785154156571" duration="21927000" />
-    </task>
-    <task id="LOCAL-00006" summary="class order">
-      <option name="closed" value="true" />
-      <created>1785233998637</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1785233998637</updated>
+      <workItem from="1785154156571" duration="22788000" />
     </task>
     <task id="LOCAL-00007" summary="class OrderProduct">
       <option name="closed" value="true" />
@@ -499,7 +489,15 @@
       <option name="project" value="LOCAL" />
       <updated>1785391946085</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="-">
+      <option name="closed" value="true" />
+      <created>1785392274556</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1785392274556</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -530,11 +528,11 @@
     <MESSAGE value="Task7" />
     <MESSAGE value="Task8" />
     <MESSAGE value="Task9-Add a Review for an Order" />
-    <MESSAGE value="-" />
     <MESSAGE value="If" />
     <MESSAGE value="Task10-View All Reviews for a Product" />
     <MESSAGE value="Task11" />
-    <option name="LAST_COMMIT_MESSAGE" value="Task11" />
+    <MESSAGE value="-" />
+    <option name="LAST_COMMIT_MESSAGE" value="-" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
