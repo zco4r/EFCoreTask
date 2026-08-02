@@ -15,8 +15,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3624669b-7f56-4a5e-aa8a-95ab5e6b2413" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EFCore Task/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EFCore Task/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EFCore Task/obj/Debug/net10.0/EFCore Task.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EFCore Task/obj/Debug/net10.0/EFCore Task.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EFCore Task/obj/Debug/net10.0/EFCore Task.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EFCore Task/obj/Debug/net10.0/EFCore Task.AssemblyInfoInputs.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,31 +114,7 @@
       <workItem from="1785154156571" duration="23130000" />
       <workItem from="1785536241888" duration="42000" />
       <workItem from="1785584471577" duration="2676000" />
-      <workItem from="1785662607648" duration="1048000" />
-    </task>
-    <task id="LOCAL-00022" summary="=">
-      <option name="closed" value="true" />
-      <created>1785241844308</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1785241844308</updated>
-    </task>
-    <task id="LOCAL-00023" summary="§">
-      <option name="closed" value="true" />
-      <created>1785241952081</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1785241952081</updated>
-    </task>
-    <task id="LOCAL-00024" summary="=">
-      <option name="closed" value="true" />
-      <created>1785330273712</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1785330273712</updated>
+      <workItem from="1785662607648" duration="10817000" />
     </task>
     <task id="LOCAL-00025" summary="=">
       <option name="closed" value="true" />
@@ -510,7 +484,31 @@
       <option name="project" value="LOCAL" />
       <updated>1785584529961</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="!">
+      <option name="closed" value="true" />
+      <created>1785663948816</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1785663948817</updated>
+    </task>
+    <task id="LOCAL-00072" summary="!">
+      <option name="closed" value="true" />
+      <created>1785663954156</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1785663954157</updated>
+    </task>
+    <task id="LOCAL-00073" summary="!">
+      <option name="closed" value="true" />
+      <created>1785663960573</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1785663960573</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -543,9 +541,9 @@
     <MESSAGE value="Task11" />
     <MESSAGE value="=" />
     <MESSAGE value="-" />
-    <MESSAGE value="!" />
     <MESSAGE value="١" />
-    <option name="LAST_COMMIT_MESSAGE" value="١" />
+    <MESSAGE value="!" />
+    <option name="LAST_COMMIT_MESSAGE" value="!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
